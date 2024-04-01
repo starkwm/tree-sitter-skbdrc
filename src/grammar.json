@@ -72,15 +72,7 @@
       "members": [
         {
           "type": "STRING",
-          "value": "⇧"
-        },
-        {
-          "type": "STRING",
           "value": "shift"
-        },
-        {
-          "type": "STRING",
-          "value": "⌃"
         },
         {
           "type": "STRING",
@@ -89,10 +81,6 @@
         {
           "type": "STRING",
           "value": "control"
-        },
-        {
-          "type": "STRING",
-          "value": "⌥"
         },
         {
           "type": "STRING",
@@ -105,10 +93,6 @@
         {
           "type": "STRING",
           "value": "option"
-        },
-        {
-          "type": "STRING",
-          "value": "⌘"
         },
         {
           "type": "STRING",

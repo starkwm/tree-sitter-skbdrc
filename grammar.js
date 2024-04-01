@@ -22,16 +22,12 @@ module.exports = grammar({
 
     modifier: (_) =>
       choice(
-        "⇧",
         "shift",
-        "⌃",
         "ctrl",
         "control",
-        "⌥",
         "alt",
         "opt",
         "option",
-        "⌘",
         "cmd",
         "command",
         "hyper",
