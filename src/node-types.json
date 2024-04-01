@@ -13,7 +13,7 @@
       "required": true,
       "types": [
         {
-          "type": "attribute",
+          "type": "keysy_operator",
           "named": true
         },
         {
@@ -25,7 +25,7 @@
           "named": true
         },
         {
-          "type": "operator",
+          "type": "modifier_operator",
           "named": true
         }
       ]
@@ -84,10 +84,6 @@
     "named": false
   },
   {
-    "type": "attribute",
-    "named": true
-  },
-  {
     "type": "cmd",
     "named": false
   },
@@ -112,7 +108,11 @@
     "named": false
   },
   {
-    "type": "operator",
+    "type": "keysy_operator",
+    "named": true
+  },
+  {
+    "type": "modifier_operator",
     "named": true
   },
   {

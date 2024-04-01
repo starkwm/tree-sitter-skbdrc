@@ -14,7 +14,11 @@ module.exports = grammar({
 
     hotkey: ($) => $._hotkey,
     _hotkey: ($) =>
-      seq(repeat(choice($.modifier, $.operator)), $.attribute, $.keysym),
+      seq(
+        repeat(choice($.modifier, $.modifier_operator)),
+        $.keysy_operator,
+        $.keysym,
+      ),
 
     modifier: (_) =>
       choice(
@@ -32,8 +36,8 @@ module.exports = grammar({
         "command",
         "hyper",
       ),
-    operator: (_) => "+",
-    attribute: (_) => "-",
+    modifier_operator: (_) => "+",
+    keysy_operator: (_) => "-",
     keysym: (_) =>
       choice(
         /[A-Z]/i,
