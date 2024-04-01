@@ -1,0 +1,92 @@
+================
+one line command
+================
+
+ctrl - a: echo "Hello World"
+
+---
+
+  (source_file
+    (keymap
+      (hotkey
+        (modifier)
+        (keysym_operator)
+        (keysym))
+      (separator)
+      (command)))
+
+=================
+next line command
+=================
+
+ctrl - a:
+echo "Hello World"
+
+---
+
+  (source_file
+    (keymap
+      (hotkey
+        (modifier)
+        (keysym_operator)
+        (keysym))
+      (separator)
+      (command)))
+
+==========================
+next line indented command
+==========================
+
+ctrl - a:
+  echo "Hello World"
+
+---
+
+  (source_file
+    (keymap
+      (hotkey
+        (modifier)
+        (keysym_operator)
+        (keysym))
+      (separator)
+      (command)))
+
+===========================
+multi line indented command
+===========================
+
+ctrl - a:
+  echo "Hello World"; \
+  echo "Foo Bar"; \
+  echo "Done"
+
+---
+
+  (source_file
+    (keymap
+      (hotkey
+        (modifier)
+        (keysym_operator)
+        (keysym))
+      (separator)
+      (command)))
+
+===============
+complex command
+===============
+
+ctrl - a:
+  if ! alacritty msg create-window > /dev/null; then \
+    open -a Alacritty; \
+  fi
+
+---
+
+  (source_file
+    (keymap
+      (hotkey
+        (modifier)
+        (keysym_operator)
+        (keysym))
+      (separator)
+      (command)))

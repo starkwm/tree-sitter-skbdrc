@@ -1,0 +1,25 @@
+========
+comments
+========
+
+######
+# This is a comment
+######
+
+shift + ctrl - a: echo "Hello World"
+
+---
+
+(source_file
+  (comment)
+  (comment)
+  (comment)
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))

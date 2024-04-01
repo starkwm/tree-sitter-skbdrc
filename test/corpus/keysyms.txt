@@ -1,0 +1,827 @@
+=================
+alphanumeric keys
+=================
+
+ctrl - a: echo "Hello World"
+ctrl - b: echo "Hello World"
+ctrl - c: echo "Hello World"
+ctrl - d: echo "Hello World"
+ctrl - e: echo "Hello World"
+ctrl - f: echo "Hello World"
+ctrl - g: echo "Hello World"
+ctrl - h: echo "Hello World"
+ctrl - i: echo "Hello World"
+ctrl - j: echo "Hello World"
+ctrl - k: echo "Hello World"
+ctrl - l: echo "Hello World"
+ctrl - m: echo "Hello World"
+ctrl - n: echo "Hello World"
+ctrl - o: echo "Hello World"
+ctrl - p: echo "Hello World"
+ctrl - q: echo "Hello World"
+ctrl - r: echo "Hello World"
+ctrl - s: echo "Hello World"
+ctrl - t: echo "Hello World"
+ctrl - u: echo "Hello World"
+ctrl - v: echo "Hello World"
+ctrl - w: echo "Hello World"
+ctrl - x: echo "Hello World"
+ctrl - y: echo "Hello World"
+ctrl - z: echo "Hello World"
+
+ctrl - 0: echo "Hello World"
+ctrl - 1: echo "Hello World"
+ctrl - 2: echo "Hello World"
+ctrl - 3: echo "Hello World"
+ctrl - 4: echo "Hello World"
+ctrl - 5: echo "Hello World"
+ctrl - 6: echo "Hello World"
+ctrl - 7: echo "Hello World"
+ctrl - 8: echo "Hello World"
+ctrl - 9: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
+=============
+function keys
+=============
+
+cmd - f1: echo "Hello World"
+cmd - f2: echo "Hello World"
+cmd - f3: echo "Hello World"
+cmd - f4: echo "Hello World"
+cmd - f5: echo "Hello World"
+cmd - f6: echo "Hello World"
+cmd - f7: echo "Hello World"
+cmd - f8: echo "Hello World"
+cmd - f9: echo "Hello World"
+cmd - f10: echo "Hello World"
+cmd - f11: echo "Hello World"
+cmd - f12: echo "Hello World"
+cmd - f13: echo "Hello World"
+cmd - f14: echo "Hello World"
+cmd - f15: echo "Hello World"
+cmd - f16: echo "Hello World"
+cmd - f17: echo "Hello World"
+cmd - f18: echo "Hello World"
+cmd - f19: echo "Hello World"
+cmd - f20: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
+=============
+specific keys
+=============
+
+opt - space: echo "Hello World"
+opt - tab: echo "Hello World"
+opt - return: echo "Hello World"
+opt - enter: echo "Hello World"
+opt - capslock: echo "Hello World"
+opt - pageup: echo "Hello World"
+opt - pagedown: echo "Hello World"
+opt - home: echo "Hello World"
+opt - end: echo "Hello World"
+opt - up: echo "Hello World"
+opt - down: echo "Hello World"
+opt - left: echo "Hello World"
+opt - right: echo "Hello World"
+opt - escape: echo "Hello World"
+opt - esc: echo "Hello World"
+opt - delete: echo "Hello World"
+opt - backtick: echo "Hello World"
+opt - grave: echo "Hello World"
+opt - `: echo "Hello World"
+opt - dash: echo "Hello World"
+opt - minus: echo "Hello World"
+opt - -: echo "Hello World"
+opt - equal: echo "Hello World"
+opt - equals: echo "Hello World"
+opt - =: echo "Hello World"
+opt - leftbracket: echo "Hello World"
+opt - [: echo "Hello World"
+opt - rightbracket: echo "Hello World"
+opt - [: echo "Hello World"
+opt - semicolon: echo "Hello World"
+opt - ;: echo "Hello World"
+opt - quote: echo "Hello World"
+opt - ": echo "Hello World"
+opt - singlequote: echo "Hello World"
+opt - ': echo "Hello World"
+opt - backslash: echo "Hello World"
+opt - \: echo "Hello World"
+opt - period: echo "Hello World"
+opt - .: echo "Hello World"
+opt - comma: echo "Hello World"
+opt - ,: echo "Hello World"
+opt - forwardslash: echo "Hello World"
+opt - slash: echo "Hello World"
+opt - /: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))

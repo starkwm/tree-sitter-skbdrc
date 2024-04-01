@@ -1,0 +1,134 @@
+===============
+shift modifiers
+===============
+
+shift + ctrl - a: echo "Hello World"
+shift - b: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
+=================
+control modifiers
+=================
+
+ctrl + shift - a: echo "Hello World"
+control - b: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
+=================
+option modifiers
+=================
+
+ctrl + alt - a: echo "Hello World"
+control + opt - b: echo "Hello World"
+option - c: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
+=================
+command modifiers
+=================
+
+ctrl + cmd - a: echo "Hello World"
+command - b: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
+===============
+hyper modifiers
+===============
+
+hyper - a: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
