@@ -1,0 +1,150 @@
+[
+  {
+    "type": "command",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "hotkey",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attribute",
+          "named": true
+        },
+        {
+          "type": "keysym",
+          "named": true
+        },
+        {
+          "type": "modifier",
+          "named": true
+        },
+        {
+          "type": "operator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keymap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "hotkey",
+          "named": true
+        },
+        {
+          "type": "separator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "keysym",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "modifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "keymap",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "alt",
+    "named": false
+  },
+  {
+    "type": "attribute",
+    "named": true
+  },
+  {
+    "type": "cmd",
+    "named": false
+  },
+  {
+    "type": "command",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "control",
+    "named": false
+  },
+  {
+    "type": "ctrl",
+    "named": false
+  },
+  {
+    "type": "hyper",
+    "named": false
+  },
+  {
+    "type": "operator",
+    "named": true
+  },
+  {
+    "type": "opt",
+    "named": false
+  },
+  {
+    "type": "option",
+    "named": false
+  },
+  {
+    "type": "separator",
+    "named": true
+  },
+  {
+    "type": "shift",
+    "named": false
+  },
+  {
+    "type": "⇧",
+    "named": false
+  },
+  {
+    "type": "⌃",
+    "named": false
+  },
+  {
+    "type": "⌘",
+    "named": false
+  },
+  {
+    "type": "⌥",
+    "named": false
+  }
+]

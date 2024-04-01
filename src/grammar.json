@@ -1,0 +1,307 @@
+{
+  "name": "skbdrc",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "_definition"
+      }
+    },
+    "_definition": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "keymap"
+        }
+      ]
+    },
+    "keymap": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "hotkey"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "separator"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "command"
+        }
+      ]
+    },
+    "hotkey": {
+      "type": "SYMBOL",
+      "name": "_hotkey"
+    },
+    "_hotkey": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "modifier"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "operator"
+              }
+            ]
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "attribute"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "keysym"
+        }
+      ]
+    },
+    "modifier": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "⇧"
+        },
+        {
+          "type": "STRING",
+          "value": "shift"
+        },
+        {
+          "type": "STRING",
+          "value": "⌃"
+        },
+        {
+          "type": "STRING",
+          "value": "ctrl"
+        },
+        {
+          "type": "STRING",
+          "value": "control"
+        },
+        {
+          "type": "STRING",
+          "value": "⌥"
+        },
+        {
+          "type": "STRING",
+          "value": "alt"
+        },
+        {
+          "type": "STRING",
+          "value": "opt"
+        },
+        {
+          "type": "STRING",
+          "value": "option"
+        },
+        {
+          "type": "STRING",
+          "value": "⌘"
+        },
+        {
+          "type": "STRING",
+          "value": "cmd"
+        },
+        {
+          "type": "STRING",
+          "value": "command"
+        },
+        {
+          "type": "STRING",
+          "value": "hyper"
+        }
+      ]
+    },
+    "operator": {
+      "type": "STRING",
+      "value": "+"
+    },
+    "attribute": {
+      "type": "STRING",
+      "value": "-"
+    },
+    "keysym": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "[A-Z]",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[0-9]",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "space|tab",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "enter|return",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "capslock",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "pageup",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "pagedown",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "home|end",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "up|down|left|right",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "escape|esc",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "delete",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "backtick|grave|`",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "dash|minus|-",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "equal|equals|=",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "leftbracket|\\[",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "rightbracket|\\]",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "semicolon|;",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "quote|\"",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "singlequote|'",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "backslash|\\\\",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "period|\\.",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "comma|,",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "forwardslash|slash|\\/",
+          "flags": "i"
+        }
+      ]
+    },
+    "separator": {
+      "type": "STRING",
+      "value": ":"
+    },
+    "command": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "PATTERN",
+            "value": ".*\\\\\\n\\s+"
+          }
+        },
+        {
+          "type": "PATTERN",
+          "value": ".*\\n"
+        }
+      ]
+    },
+    "comment": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": -10,
+        "content": {
+          "type": "PATTERN",
+          "value": "#.*"
+        }
+      }
+    }
+  },
+  "extras": [
+    {
+      "type": "SYMBOL",
+      "name": "comment"
+    },
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
