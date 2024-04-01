@@ -1,0 +1,7 @@
+((comment) @comment)
+((modifier) @keyword)
+((operator) @operator)
+((attribute) @operator)
+((separator) @punctuation.delimiter)
+((keysym) @keyword)
+((command) @string)
