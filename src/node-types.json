@@ -13,11 +13,11 @@
       "required": true,
       "types": [
         {
-          "type": "keysy_operator",
+          "type": "keysym",
           "named": true
         },
         {
-          "type": "keysym",
+          "type": "keysym_operator",
           "named": true
         },
         {
@@ -108,7 +108,7 @@
     "named": false
   },
   {
-    "type": "keysy_operator",
+    "type": "keysym_operator",
     "named": true
   },
   {

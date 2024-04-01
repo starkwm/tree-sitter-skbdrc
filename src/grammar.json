@@ -59,7 +59,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "keysy_operator"
+          "name": "keysym_operator"
         },
         {
           "type": "SYMBOL",
@@ -128,7 +128,7 @@
       "type": "STRING",
       "value": "+"
     },
-    "keysy_operator": {
+    "keysym_operator": {
       "type": "STRING",
       "value": "-"
     },
