@@ -13,6 +13,9 @@ local M = {}
 
 M.setup = function()
   vim.filetype.add {
+    extension = {
+      skbd = "skbdrc",
+    },
     pattern = {
       ["skbdrc"] = "skbdrc",
     },
