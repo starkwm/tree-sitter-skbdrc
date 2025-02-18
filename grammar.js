@@ -30,6 +30,7 @@ module.exports = grammar({
         "option",
         "cmd",
         "command",
+        "meh",
         "hyper",
       ),
     modifier_operator: (_) => "+",
