@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "skbdrc",
+      "camelcase": "Skbdrc",
+      "title": "Skbdrc",
+      "scope": "source.skbdrc",
+      "file-types": [
+        "skbdrc"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injection-regex": "^skbdrc$"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "BSD 3-Clause",
+    "description": "Skbdrc grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Tom Bell",
+        "email": "tomb@tombell.dev"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/starkwm/tree-sitter-skbdrc"
+    }
+  },
+  "bindings": {
+    "c": false,
+    "go": false,
+    "node": false,
+    "python": false,
+    "rust": false,
+    "swift": false,
+    "zig": false
+  }
+}
