@@ -116,6 +116,23 @@ command - b: echo "Hello World"
     (separator)
     (command)))
 
+=============
+meh modifiers
+=============
+
+meh - a: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
 ===============
 hyper modifiers
 ===============
