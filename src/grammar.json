@@ -15,6 +15,10 @@
         {
           "type": "SYMBOL",
           "name": "keymap"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "leader"
         }
       ]
     },
@@ -35,6 +39,27 @@
         }
       ]
     },
+    "leader": {
+      "type": "SYMBOL",
+      "name": "_leader"
+    },
+    "_leader": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "directive"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "separator"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hotkey"
+        }
+      ]
+    },
     "hotkey": {
       "type": "SYMBOL",
       "name": "_hotkey"
@@ -43,20 +68,32 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "REPEAT",
-          "content": {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "modifier"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "modifier_operator"
+          "type": "SYMBOL",
+          "name": "modifier"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "REPEAT",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "SYMBOL",
+                    "name": "modifier_operator"
+                  },
+                  {
+                    "type": "SYMBOL",
+                    "name": "modifier"
+                  }
+                ]
               }
-            ]
-          }
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "SYMBOL",
@@ -67,6 +104,10 @@
           "name": "keysym"
         }
       ]
+    },
+    "directive": {
+      "type": "STRING",
+      "value": "leader"
     },
     "modifier": {
       "type": "CHOICE",

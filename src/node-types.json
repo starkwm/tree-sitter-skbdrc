@@ -60,6 +60,29 @@
     "fields": {}
   },
   {
+    "type": "leader",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "directive",
+          "named": true
+        },
+        {
+          "type": "hotkey",
+          "named": true
+        },
+        {
+          "type": "separator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "modifier",
     "named": true,
     "fields": {}
@@ -75,6 +98,10 @@
       "types": [
         {
           "type": "keymap",
+          "named": true
+        },
+        {
+          "type": "leader",
           "named": true
         }
       ]
@@ -104,6 +131,10 @@
   {
     "type": "ctrl",
     "named": false
+  },
+  {
+    "type": "directive",
+    "named": true
   },
   {
     "type": "hyper",

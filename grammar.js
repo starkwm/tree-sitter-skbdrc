@@ -8,17 +8,27 @@ module.exports = grammar({
   rules: {
     source_file: ($) => repeat($._definition),
 
-    _definition: ($) => choice($.keymap),
+    _definition: ($) =>
+      choice(
+        $.keymap,
+        $.leader
+      ),
 
     keymap: ($) => seq($.hotkey, $.separator, $.command),
+
+    leader: ($) => $._leader,
+    _leader: ($) => seq($.directive, $.separator, $.hotkey),
 
     hotkey: ($) => $._hotkey,
     _hotkey: ($) =>
       seq(
-        repeat(choice($.modifier, $.modifier_operator)),
+        $.modifier,
+        optional(repeat(seq($.modifier_operator, $.modifier))),
         $.keysym_operator,
         $.keysym,
       ),
+
+    directive: (_) => "leader",
 
     modifier: (_) =>
       choice(
@@ -33,8 +43,11 @@ module.exports = grammar({
         "meh",
         "hyper",
       ),
+
     modifier_operator: (_) => "+",
+
     keysym_operator: (_) => "-",
+
     keysym: (_) =>
       choice(
         /[A-Z]/i,
@@ -62,7 +75,9 @@ module.exports = grammar({
         /comma|,/i,
         /forwardslash|slash|\//i,
       ),
+
     separator: (_) => ":",
+
     command: (_) => seq(repeat(/.*\\\n\s+/), /.*\n/),
 
     comment: (_) => token(prec(-10, /#.*/)),
