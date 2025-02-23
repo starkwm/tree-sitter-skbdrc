@@ -1,4 +1,5 @@
 (comment) @comment
+(directive) @keyword
 (modifier) @keyword
 (modifier_operator) @operator
 (keysym_operator) @operator
