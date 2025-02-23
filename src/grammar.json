@@ -167,42 +167,22 @@
       "members": [
         {
           "type": "PATTERN",
-          "value": "[A-Z]",
+          "value": "space|tab|enter|return",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "[0-9]",
+          "value": "caps_lock|capslock|caps",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20",
+          "value": "page_up|pageup",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "space|tab",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "enter|return",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "capslock",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "pageup",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "pagedown",
+          "value": "page_down|pagedown",
           "flags": "i"
         },
         {
@@ -217,22 +197,27 @@
         },
         {
           "type": "PATTERN",
+          "value": "f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
           "value": "escape|esc",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "delete",
+          "value": "delete|del",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "backtick|grave|`",
+          "value": "grave|backtick|`",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "dash|minus|-",
+          "value": "minus|dash|-",
           "flags": "i"
         },
         {
@@ -242,12 +227,12 @@
         },
         {
           "type": "PATTERN",
-          "value": "leftbracket|\\[",
+          "value": "left_bracket|leftbracket|\\[",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "rightbracket|\\]",
+          "value": "right_bracket|rightbracket|\\]",
           "flags": "i"
         },
         {
@@ -262,12 +247,7 @@
         },
         {
           "type": "PATTERN",
-          "value": "singlequote|'",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "backslash|\\\\",
+          "value": "single_quote|singlequote|'",
           "flags": "i"
         },
         {
@@ -282,7 +262,22 @@
         },
         {
           "type": "PATTERN",
-          "value": "forwardslash|slash|\\/",
+          "value": "backslash|\\\\",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "slash|forward_slash|forwardslash|\\/",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[A-Z]",
+          "flags": "i"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[0-9]",
           "flags": "i"
         }
       ]

@@ -473,8 +473,11 @@ opt - space: echo "Hello World"
 opt - tab: echo "Hello World"
 opt - return: echo "Hello World"
 opt - enter: echo "Hello World"
+opt - caps_lock: echo "Hello World"
 opt - capslock: echo "Hello World"
+opt - page_up: echo "Hello World"
 opt - pageup: echo "Hello World"
+opt - page_down: echo "Hello World"
 opt - pagedown: echo "Hello World"
 opt - home: echo "Hello World"
 opt - end: echo "Hello World"
@@ -485,23 +488,27 @@ opt - right: echo "Hello World"
 opt - escape: echo "Hello World"
 opt - esc: echo "Hello World"
 opt - delete: echo "Hello World"
-opt - backtick: echo "Hello World"
+opt - del: echo "Hello World"
 opt - grave: echo "Hello World"
+opt - backtick: echo "Hello World"
 opt - `: echo "Hello World"
-opt - dash: echo "Hello World"
 opt - minus: echo "Hello World"
+opt - dash: echo "Hello World"
 opt - -: echo "Hello World"
 opt - equal: echo "Hello World"
 opt - equals: echo "Hello World"
 opt - =: echo "Hello World"
+opt - left_bracket: echo "Hello World"
 opt - leftbracket: echo "Hello World"
 opt - [: echo "Hello World"
+opt - right_bracket: echo "Hello World"
 opt - rightbracket: echo "Hello World"
-opt - [: echo "Hello World"
+opt - ]: echo "Hello World"
 opt - semicolon: echo "Hello World"
 opt - ;: echo "Hello World"
 opt - quote: echo "Hello World"
 opt - ": echo "Hello World"
+opt - single_quote: echo "Hello World"
 opt - singlequote: echo "Hello World"
 opt - ': echo "Hello World"
 opt - backslash: echo "Hello World"
@@ -510,13 +517,70 @@ opt - period: echo "Hello World"
 opt - .: echo "Hello World"
 opt - comma: echo "Hello World"
 opt - ,: echo "Hello World"
-opt - forwardslash: echo "Hello World"
 opt - slash: echo "Hello World"
+opt - forward_slash: echo "Hello World"
+opt - forwardslash: echo "Hello World"
 opt - /: echo "Hello World"
 
 ---
 
 (source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
   (keymap
     (hotkey
       (modifier)

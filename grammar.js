@@ -50,30 +50,36 @@ module.exports = grammar({
 
     keysym: (_) =>
       choice(
-        /[A-Z]/i,
-        /[0-9]/i,
-        /f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20/i,
-        /space|tab/i,
-        /enter|return/i,
-        /capslock/i,
-        /pageup/i,
-        /pagedown/i,
+        /space|tab|enter|return/i,
+
+        /caps_lock|capslock|caps/i,
+
+        /page_up|pageup/i,
+        /page_down|pagedown/i,
         /home|end/i,
+
         /up|down|left|right/i,
+
+        /f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20/i,
+
         /escape|esc/i,
-        /delete/i,
-        /backtick|grave|`/i,
-        /dash|minus|-/i,
+        /delete|del/i,
+
+        /grave|backtick|`/i,
+        /minus|dash|-/i,
         /equal|equals|=/i,
-        /leftbracket|\[/i,
-        /rightbracket|\]/i,
+        /left_bracket|leftbracket|\[/i,
+        /right_bracket|rightbracket|\]/i,
         /semicolon|;/i,
         /quote|"/i,
-        /singlequote|'/i,
-        /backslash|\\/i,
+        /single_quote|singlequote|'/i,
         /period|\./i,
         /comma|,/i,
-        /forwardslash|slash|\//i,
+        /backslash|\\/i,
+        /slash|forward_slash|forwardslash|\//i,
+
+        /[A-Z]/i,
+        /[0-9]/i,
       ),
 
     separator: (_) => ":",
