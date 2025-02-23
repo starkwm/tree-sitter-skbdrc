@@ -116,6 +116,41 @@ command - b: echo "Hello World"
     (separator)
     (command)))
 
+==================
+multiple modifiers
+==================
+
+ctrl + cmd + opt - a: echo "Hello World"
+ctrl + shift + command + opt - b: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command))
+  (keymap
+    (hotkey
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (modifier_operator)
+      (modifier)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+
 =============
 meh modifiers
 =============
@@ -149,3 +184,22 @@ hyper - a: echo "Hello World"
       (keysym))
     (separator)
     (command)))
+
+=================
+invalid modifiers
+=================
+
+ctrl cmd opt - a: echo "Hello World"
+
+---
+
+(source_file
+  (keymap
+    (hotkey
+      (modifier)
+      (ERROR)
+      (keysym_operator)
+      (keysym))
+    (separator)
+    (command)))
+

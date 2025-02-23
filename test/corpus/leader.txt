@@ -1,0 +1,16 @@
+==========
+leader key
+==========
+
+leader: ctrl - space
+
+---
+
+(source_file
+  (leader
+    (directive)
+    (separator)
+    (hotkey
+      (modifier)
+      (keysym_operator)
+      (keysym))))
