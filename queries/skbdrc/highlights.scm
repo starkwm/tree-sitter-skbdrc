@@ -1,8 +1,15 @@
 (comment) @comment
-(directive) @keyword
-(modifier) @keyword
+
+(directive) @keyword.directive
+(leader_key) @keyword.directive
+
 (modifier_operator) @operator
-(keysym_operator) @operator
-(keysym) @keyword
-(separator) @punctuation.delimiter
-(command) @string
+(modifier) @keyword
+
+(key_operator) @operator
+(key) @keyword
+
+(separator) @operator
+
+; TODO: highlight as injection bash
+;(command) @string

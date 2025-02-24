@@ -10,8 +10,8 @@ ctrl - a: echo "Hello World"
     (keymap
       (hotkey
         (modifier)
-        (keysym_operator)
-        (keysym))
+        (key_operator)
+        (key))
       (separator)
       (command)))
 
@@ -28,8 +28,8 @@ echo "Hello World"
     (keymap
       (hotkey
         (modifier)
-        (keysym_operator)
-        (keysym))
+        (key_operator)
+        (key))
       (separator)
       (command)))
 
@@ -46,8 +46,8 @@ ctrl - a:
     (keymap
       (hotkey
         (modifier)
-        (keysym_operator)
-        (keysym))
+        (key_operator)
+        (key))
       (separator)
       (command)))
 
@@ -66,8 +66,8 @@ ctrl - a:
     (keymap
       (hotkey
         (modifier)
-        (keysym_operator)
-        (keysym))
+        (key_operator)
+        (key))
       (separator)
       (command)))
 
@@ -86,7 +86,7 @@ ctrl - a:
     (keymap
       (hotkey
         (modifier)
-        (keysym_operator)
-        (keysym))
+        (key_operator)
+        (key))
       (separator)
       (command)))

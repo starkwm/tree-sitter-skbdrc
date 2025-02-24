@@ -8,27 +8,30 @@ module.exports = grammar({
   rules: {
     source_file: ($) => repeat($._definition),
 
-    _definition: ($) =>
-      choice(
-        $.keymap,
-        $.leader
-      ),
+    _definition: ($) => choice($.set_leader, $.keymap, $.leader_keymap),
+
+    set_leader: ($) => $._set_leader,
+    _set_leader: ($) => seq($.directive, $.separator, $.hotkey),
+
+    directive: (_) => "leader",
 
     keymap: ($) => seq($.hotkey, $.separator, $.command),
-
-    leader: ($) => $._leader,
-    _leader: ($) => seq($.directive, $.separator, $.hotkey),
 
     hotkey: ($) => $._hotkey,
     _hotkey: ($) =>
       seq(
         $.modifier,
         optional(repeat(seq($.modifier_operator, $.modifier))),
-        $.keysym_operator,
-        $.keysym,
+        $.key_operator,
+        $.key,
       ),
 
-    directive: (_) => "leader",
+    leader_keymap: ($) => $._leader_keymap,
+    _leader_keymap: ($) =>
+      seq($.leader_key, repeat($.key), $.separator, $.command),
+
+    leader_key: ($) => $._leader_key,
+    _leader_key: (_) => token("<leader>"),
 
     modifier: (_) =>
       choice(
@@ -46,45 +49,32 @@ module.exports = grammar({
 
     modifier_operator: (_) => "+",
 
-    keysym_operator: (_) => "-",
+    key_operator: (_) => "-",
 
-    keysym: (_) =>
+    key: (_) =>
       choice(
-        /space|tab|enter|return/i,
+        // Common keys and navigation
+        /(space|tab|enter|return|escape|esc|delete|del)/i,
 
-        /caps_lock|capslock|caps/i,
+        // Special keys
+        /caps_?lock|caps/i, // Optional underscore
+        /page_(up|down)|page(up|down)/i, // Combines both page patterns
+        /home|end|up|down|left|right/i,
 
-        /page_up|pageup/i,
-        /page_down|pagedown/i,
-        /home|end/i,
+        // Function keys (simplified range)
+        /f(?:[1-9]|1[0-9]|20)/i, // Matches f1-f20
 
-        /up|down|left|right/i,
+        // Punctuation and symbols
+        /[`\-=\[\];'",.\/\\]/i, // Simple symbols in a character class
+        /(grave|backtick|minus|dash|equal|equals|left_?bracket|right_?bracket|semicolon|quote|single_?quote|period|comma|backslash|slash|forward_?slash)/i,
 
-        /f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20/i,
-
-        /escape|esc/i,
-        /delete|del/i,
-
-        /grave|backtick|`/i,
-        /minus|dash|-/i,
-        /equal|equals|=/i,
-        /left_bracket|leftbracket|\[/i,
-        /right_bracket|rightbracket|\]/i,
-        /semicolon|;/i,
-        /quote|"/i,
-        /single_quote|singlequote|'/i,
-        /period|\./i,
-        /comma|,/i,
-        /backslash|\\/i,
-        /slash|forward_slash|forwardslash|\//i,
-
-        /[A-Z]/i,
-        /[0-9]/i,
+        // Letters and numbers
+        /[A-Z0-9]/i, // Combined alphanumeric
       ),
 
     separator: (_) => ":",
 
-    command: (_) => seq(repeat(/.*\\\n\s+/), /.*\n/),
+    command: (_) => /(?:.*\\\n\s+)*.*\n/,
 
     comment: (_) => token(prec(-10, /#.*/)),
   },

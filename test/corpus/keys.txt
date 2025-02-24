@@ -46,253 +46,253 @@ ctrl - 9: echo "Hello World"
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -327,141 +327,141 @@ cmd - f20: echo "Hello World"
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -528,364 +528,364 @@ opt - /: echo "Hello World"
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))

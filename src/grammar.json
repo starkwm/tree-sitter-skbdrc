@@ -14,13 +14,42 @@
       "members": [
         {
           "type": "SYMBOL",
+          "name": "set_leader"
+        },
+        {
+          "type": "SYMBOL",
           "name": "keymap"
         },
         {
           "type": "SYMBOL",
-          "name": "leader"
+          "name": "leader_keymap"
         }
       ]
+    },
+    "set_leader": {
+      "type": "SYMBOL",
+      "name": "_set_leader"
+    },
+    "_set_leader": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "directive"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "separator"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hotkey"
+        }
+      ]
+    },
+    "directive": {
+      "type": "STRING",
+      "value": "leader"
     },
     "keymap": {
       "type": "SEQ",
@@ -36,27 +65,6 @@
         {
           "type": "SYMBOL",
           "name": "command"
-        }
-      ]
-    },
-    "leader": {
-      "type": "SYMBOL",
-      "name": "_leader"
-    },
-    "_leader": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "directive"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "separator"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "hotkey"
         }
       ]
     },
@@ -97,17 +105,52 @@
         },
         {
           "type": "SYMBOL",
-          "name": "keysym_operator"
+          "name": "key_operator"
         },
         {
           "type": "SYMBOL",
-          "name": "keysym"
+          "name": "key"
         }
       ]
     },
-    "directive": {
-      "type": "STRING",
-      "value": "leader"
+    "leader_keymap": {
+      "type": "SYMBOL",
+      "name": "_leader_keymap"
+    },
+    "_leader_keymap": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "leader_key"
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "key"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "separator"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "command"
+        }
+      ]
+    },
+    "leader_key": {
+      "type": "SYMBOL",
+      "name": "_leader_key"
+    },
+    "_leader_key": {
+      "type": "TOKEN",
+      "content": {
+        "type": "STRING",
+        "value": "<leader>"
+      }
     },
     "modifier": {
       "type": "CHOICE",
@@ -158,126 +201,51 @@
       "type": "STRING",
       "value": "+"
     },
-    "keysym_operator": {
+    "key_operator": {
       "type": "STRING",
       "value": "-"
     },
-    "keysym": {
+    "key": {
       "type": "CHOICE",
       "members": [
         {
           "type": "PATTERN",
-          "value": "space|tab|enter|return",
+          "value": "(space|tab|enter|return|escape|esc|delete|del)",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "caps_lock|capslock|caps",
+          "value": "caps_?lock|caps",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "page_up|pageup",
+          "value": "page_(up|down)|page(up|down)",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "page_down|pagedown",
+          "value": "home|end|up|down|left|right",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "home|end",
+          "value": "f(?:[1-9]|1[0-9]|20)",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "up|down|left|right",
+          "value": "[`\\-=\\[\\];'\",.\\/\\\\]",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "f1|f2|f3|f4|f5|f6|f7|f8|f9|f10|f11|f12|f13|f14|f15|f16|f17|f18|f19|f20",
+          "value": "(grave|backtick|minus|dash|equal|equals|left_?bracket|right_?bracket|semicolon|quote|single_?quote|period|comma|backslash|slash|forward_?slash)",
           "flags": "i"
         },
         {
           "type": "PATTERN",
-          "value": "escape|esc",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "delete|del",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "grave|backtick|`",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "minus|dash|-",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "equal|equals|=",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "left_bracket|leftbracket|\\[",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "right_bracket|rightbracket|\\]",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "semicolon|;",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "quote|\"",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "single_quote|singlequote|'",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "period|\\.",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "comma|,",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "backslash|\\\\",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "slash|forward_slash|forwardslash|\\/",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "[A-Z]",
-          "flags": "i"
-        },
-        {
-          "type": "PATTERN",
-          "value": "[0-9]",
+          "value": "[A-Z0-9]",
           "flags": "i"
         }
       ]
@@ -287,20 +255,8 @@
       "value": ":"
     },
     "command": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "PATTERN",
-            "value": ".*\\\\\\n\\s+"
-          }
-        },
-        {
-          "type": "PATTERN",
-          "value": ".*\\n"
-        }
-      ]
+      "type": "PATTERN",
+      "value": "(?:.*\\\\\\n\\s+)*.*\\n"
     },
     "comment": {
       "type": "TOKEN",

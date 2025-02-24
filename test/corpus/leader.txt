@@ -1,16 +1,117 @@
-==========
-leader key
-==========
+==============
+set leader key
+==============
 
 leader: ctrl - space
 
 ---
 
 (source_file
-  (leader
+  (set_leader
     (directive)
     (separator)
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))))
+      (key_operator)
+      (key))))
+
+=============
+leader keymap
+=============
+
+<leader> o b: echo "Hello World"
+
+---
+
+(source_file
+  (leader_keymap
+    (leader_key)
+    (key)
+    (key)
+    (separator)
+    (command)))
+
+============================
+set leader and leader keymap
+============================
+
+leader: ctrl - space
+
+<leader> o b: echo "Hello World"
+
+---
+
+(source_file
+  (set_leader
+    (directive)
+    (separator)
+    (hotkey
+      (modifier)
+      (key_operator)
+      (key)))
+  (leader_keymap
+    (leader_key)
+    (key)
+    (key)
+    (separator)
+    (command)))
+
+===============
+complex example
+===============
+
+leader: ctrl - space
+
+# pressing ctrl + space -> enter
+<leader> enter:
+  open -a Ghostty
+
+# pressing ctrl + space -> o -> b
+<leader> o b:
+  open -na "Google Chrome" --args --new-window
+
+# pressing ctrl + space -> o -> d
+<leader> o d:
+  osascript -e 'tell application "Discord" to activate'
+
+# pressing ctrl + space -> o -> e
+<leader> o d:
+  osascript -e 'tell application "Mail" to activate'
+
+---
+
+(source_file
+  (set_leader
+    (directive)
+    (separator)
+    (hotkey
+      (modifier)
+      (key_operator)
+      (key)))
+    (comment)
+    (leader_keymap
+      (leader_key)
+      (key)
+      (separator)
+      (command))
+    (comment)
+    (leader_keymap
+      (leader_key)
+      (key)
+      (key)
+      (separator)
+      (command))
+    (comment)
+    (leader_keymap
+      (leader_key)
+      (key)
+      (key)
+      (separator)
+      (command))
+    (comment)
+    (leader_keymap
+      (leader_key)
+      (key)
+      (key)
+      (separator)
+      (command)))

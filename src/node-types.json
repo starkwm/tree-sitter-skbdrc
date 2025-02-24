@@ -1,10 +1,5 @@
 [
   {
-    "type": "command",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "hotkey",
     "named": true,
     "fields": {},
@@ -13,11 +8,11 @@
       "required": true,
       "types": [
         {
-          "type": "keysym",
+          "type": "key",
           "named": true
         },
         {
-          "type": "keysym_operator",
+          "type": "key_operator",
           "named": true
         },
         {
@@ -30,6 +25,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "key",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "keymap",
@@ -55,12 +55,44 @@
     }
   },
   {
-    "type": "keysym",
+    "type": "leader_key",
     "named": true,
     "fields": {}
   },
   {
-    "type": "leader",
+    "type": "leader_keymap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "key",
+          "named": true
+        },
+        {
+          "type": "leader_key",
+          "named": true
+        },
+        {
+          "type": "separator",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "modifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "set_leader",
     "named": true,
     "fields": {},
     "children": {
@@ -83,11 +115,6 @@
     }
   },
   {
-    "type": "modifier",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "source_file",
     "named": true,
     "root": true,
@@ -101,11 +128,19 @@
           "named": true
         },
         {
-          "type": "leader",
+          "type": "leader_keymap",
+          "named": true
+        },
+        {
+          "type": "set_leader",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "<leader>",
+    "named": false
   },
   {
     "type": "alt",
@@ -114,6 +149,10 @@
   {
     "type": "cmd",
     "named": false
+  },
+  {
+    "type": "command",
+    "named": true
   },
   {
     "type": "command",
@@ -141,7 +180,7 @@
     "named": false
   },
   {
-    "type": "keysym_operator",
+    "type": "key_operator",
     "named": true
   },
   {

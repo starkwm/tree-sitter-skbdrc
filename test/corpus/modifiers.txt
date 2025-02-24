@@ -13,15 +13,15 @@ shift - b: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -40,15 +40,15 @@ control - b: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -68,8 +68,8 @@ option - c: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
@@ -77,15 +77,15 @@ option - c: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -104,15 +104,15 @@ command - b: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -133,8 +133,8 @@ ctrl + shift + command + opt - b: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command))
   (keymap
@@ -146,8 +146,8 @@ ctrl + shift + command + opt - b: echo "Hello World"
       (modifier)
       (modifier_operator)
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -163,8 +163,8 @@ meh - a: echo "Hello World"
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -180,8 +180,8 @@ hyper - a: echo "Hello World"
   (keymap
     (hotkey
       (modifier)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 
@@ -198,8 +198,8 @@ ctrl cmd opt - a: echo "Hello World"
     (hotkey
       (modifier)
       (ERROR)
-      (keysym_operator)
-      (keysym))
+      (key_operator)
+      (key))
     (separator)
     (command)))
 

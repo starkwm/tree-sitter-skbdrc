@@ -1,3 +1,6 @@
 ; keymaps
 
-[(keymap)] @fold
+[
+  (keymap)
+  (leader_keymap)
+] @fold
