@@ -1,7 +1,7 @@
 {
   "name": "tree-sitter-skbdrc",
   "devDependencies": {
-    "tree-sitter-cli": "^0.25.1"
+    "tree-sitter-cli": "^0.25.8"
   },
   "scripts": {
     "build": "tree-sitter generate",
