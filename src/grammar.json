@@ -23,6 +23,10 @@
         {
           "type": "SYMBOL",
           "name": "leader_keymap"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "blocklist"
         }
       ]
     },
@@ -151,6 +155,47 @@
         "type": "STRING",
         "value": "<leader>"
       }
+    },
+    "blocklist": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "blocklist_directive"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string_list"
+        }
+      ]
+    },
+    "blocklist_directive": {
+      "type": "STRING",
+      "value": ".blocklist"
+    },
+    "string_list": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "["
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "string"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "]"
+        }
+      ]
+    },
+    "string": {
+      "type": "PATTERN",
+      "value": "\"[^\"]*\""
     },
     "modifier": {
       "type": "PATTERN",

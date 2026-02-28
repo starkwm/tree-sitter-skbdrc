@@ -2,6 +2,9 @@
 
 (directive) @keyword.directive
 (leader_key) @keyword.directive
+(blocklist_directive) @keyword.directive
+
+(string) @string
 
 (modifier_operator) @operator
 (modifier) @keyword

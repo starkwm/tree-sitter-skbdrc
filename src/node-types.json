@@ -1,5 +1,24 @@
 [
   {
+    "type": "blocklist",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "blocklist_directive",
+          "named": true
+        },
+        {
+          "type": "string_list",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "hotkey",
     "named": true,
     "fields": {},
@@ -119,6 +138,10 @@
       "required": false,
       "types": [
         {
+          "type": "blocklist",
+          "named": true
+        },
+        {
           "type": "keymap",
           "named": true
         },
@@ -134,8 +157,35 @@
     }
   },
   {
+    "type": "string_list",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "<leader>",
     "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "blocklist_directive",
+    "named": true
   },
   {
     "type": "command",
@@ -164,6 +214,10 @@
   },
   {
     "type": "separator",
+    "named": true
+  },
+  {
+    "type": "string",
     "named": true
   }
 ]

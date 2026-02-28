@@ -1,0 +1,66 @@
+===============
+empty blocklist
+===============
+
+.blocklist []
+
+---
+
+(source_file
+  (blocklist
+    (blocklist_directive)
+    (string_list)))
+
+================
+blocklist with one string
+================
+
+.blocklist [
+  "string1"
+]
+
+---
+
+(source_file
+  (blocklist
+    (blocklist_directive)
+    (string_list
+      (string))))
+
+================
+blocklist with multiple strings
+================
+
+.blocklist [
+  "string1"
+  "string2"
+  "string3"
+]
+
+---
+
+(source_file
+  (blocklist
+    (blocklist_directive)
+    (string_list
+      (string)
+      (string)
+      (string))))
+
+================
+blocklist without trailing newline
+================
+
+.blocklist [
+  "string1"
+  "string2"
+]
+
+---
+
+(source_file
+  (blocklist
+    (blocklist_directive)
+    (string_list
+      (string)
+      (string))))

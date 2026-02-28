@@ -8,7 +8,7 @@ module.exports = grammar({
   rules: {
     source_file: ($) => repeat($._definition),
 
-    _definition: ($) => choice($.set_leader, $.keymap, $.leader_keymap),
+    _definition: ($) => choice($.set_leader, $.keymap, $.leader_keymap, $.blocklist),
 
     set_leader: ($) => $._set_leader,
     _set_leader: ($) => seq($.directive, $.separator, $.hotkey),
@@ -32,6 +32,14 @@ module.exports = grammar({
 
     leader_key: ($) => $._leader_key,
     _leader_key: (_) => token("<leader>"),
+
+    blocklist: ($) => seq($.blocklist_directive, $.string_list),
+
+    blocklist_directive: (_) => ".blocklist",
+
+    string_list: ($) => seq("[", repeat($.string), "]"),
+
+    string: (_) => /"[^"]*"/,
 
     modifier: (_) =>
       /(l|r)?(shift|ctrl|control|alt|opt|option|cmd|command)|meh|hyper/i,
