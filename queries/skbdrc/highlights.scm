@@ -13,6 +13,3 @@
 (key) @keyword
 
 (separator) @operator
-
-; TODO: highlight as injection bash
-;(command) @string
