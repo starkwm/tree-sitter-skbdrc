@@ -153,49 +153,9 @@
       }
     },
     "modifier": {
-      "type": "CHOICE",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "shift"
-        },
-        {
-          "type": "STRING",
-          "value": "ctrl"
-        },
-        {
-          "type": "STRING",
-          "value": "control"
-        },
-        {
-          "type": "STRING",
-          "value": "alt"
-        },
-        {
-          "type": "STRING",
-          "value": "opt"
-        },
-        {
-          "type": "STRING",
-          "value": "option"
-        },
-        {
-          "type": "STRING",
-          "value": "cmd"
-        },
-        {
-          "type": "STRING",
-          "value": "command"
-        },
-        {
-          "type": "STRING",
-          "value": "meh"
-        },
-        {
-          "type": "STRING",
-          "value": "hyper"
-        }
-      ]
+      "type": "PATTERN",
+      "value": "(l|r)?(shift|ctrl|control|alt|opt|option|cmd|command)|meh|hyper",
+      "flags": "i"
     },
     "modifier_operator": {
       "type": "STRING",

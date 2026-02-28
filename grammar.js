@@ -34,18 +34,7 @@ module.exports = grammar({
     _leader_key: (_) => token("<leader>"),
 
     modifier: (_) =>
-      choice(
-        "shift",
-        "ctrl",
-        "control",
-        "alt",
-        "opt",
-        "option",
-        "cmd",
-        "command",
-        "meh",
-        "hyper",
-      ),
+      /(l|r)?(shift|ctrl|control|alt|opt|option|cmd|command)|meh|hyper/i,
 
     modifier_operator: (_) => "+",
 

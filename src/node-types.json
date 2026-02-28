@@ -87,11 +87,6 @@
     }
   },
   {
-    "type": "modifier",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "set_leader",
     "named": true,
     "fields": {},
@@ -143,20 +138,8 @@
     "named": false
   },
   {
-    "type": "alt",
-    "named": false
-  },
-  {
-    "type": "cmd",
-    "named": false
-  },
-  {
     "type": "command",
     "named": true
-  },
-  {
-    "type": "command",
-    "named": false
   },
   {
     "type": "comment",
@@ -164,47 +147,23 @@
     "extra": true
   },
   {
-    "type": "control",
-    "named": false
-  },
-  {
-    "type": "ctrl",
-    "named": false
-  },
-  {
     "type": "directive",
     "named": true
-  },
-  {
-    "type": "hyper",
-    "named": false
   },
   {
     "type": "key_operator",
     "named": true
   },
   {
-    "type": "meh",
-    "named": false
+    "type": "modifier",
+    "named": true
   },
   {
     "type": "modifier_operator",
     "named": true
   },
   {
-    "type": "opt",
-    "named": false
-  },
-  {
-    "type": "option",
-    "named": false
-  },
-  {
     "type": "separator",
     "named": true
-  },
-  {
-    "type": "shift",
-    "named": false
   }
 ]
