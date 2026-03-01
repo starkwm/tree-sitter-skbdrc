@@ -14,46 +14,13 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "set_leader"
-        },
-        {
-          "type": "SYMBOL",
           "name": "keymap"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "leader_keymap"
         },
         {
           "type": "SYMBOL",
           "name": "blocklist"
         }
       ]
-    },
-    "set_leader": {
-      "type": "SYMBOL",
-      "name": "_set_leader"
-    },
-    "_set_leader": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "directive"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "separator"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "hotkey"
-        }
-      ]
-    },
-    "directive": {
-      "type": "STRING",
-      "value": "leader"
     },
     "keymap": {
       "type": "SEQ",
@@ -116,45 +83,6 @@
           "name": "key"
         }
       ]
-    },
-    "leader_keymap": {
-      "type": "SYMBOL",
-      "name": "_leader_keymap"
-    },
-    "_leader_keymap": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "leader_key"
-        },
-        {
-          "type": "REPEAT",
-          "content": {
-            "type": "SYMBOL",
-            "name": "key"
-          }
-        },
-        {
-          "type": "SYMBOL",
-          "name": "separator"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "command"
-        }
-      ]
-    },
-    "leader_key": {
-      "type": "SYMBOL",
-      "name": "_leader_key"
-    },
-    "_leader_key": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": "<leader>"
-      }
     },
     "blocklist": {
       "type": "SEQ",
@@ -256,8 +184,17 @@
       ]
     },
     "separator": {
-      "type": "STRING",
-      "value": ":"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": ":"
+        },
+        {
+          "type": "STRING",
+          "value": "->"
+        }
+      ]
     },
     "command": {
       "type": "PATTERN",

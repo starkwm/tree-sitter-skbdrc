@@ -252,20 +252,18 @@ lmeh - f: echo "Hello World"
     (hotkey
       (modifier)
       (ERROR
+        (modifier)
         (modifier))
       (key_operator)
       (key))
     (separator)
     (command))
-  (leader_keymap
-    (leader_key
-      (MISSING "<leader>"))
-    (key)
-    (key)
-    (key)
-    (key)
-    (key)
-    (key)
+  (ERROR)
+  (keymap
+    (hotkey
+      (modifier)
+      (key_operator)
+      (key))
     (separator)
     (command)))
 

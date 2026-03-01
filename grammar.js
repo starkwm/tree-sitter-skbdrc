@@ -8,12 +8,7 @@ module.exports = grammar({
   rules: {
     source_file: ($) => repeat($._definition),
 
-    _definition: ($) => choice($.set_leader, $.keymap, $.leader_keymap, $.blocklist),
-
-    set_leader: ($) => $._set_leader,
-    _set_leader: ($) => seq($.directive, $.separator, $.hotkey),
-
-    directive: (_) => "leader",
+    _definition: ($) => choice($.keymap, $.blocklist),
 
     keymap: ($) => seq($.hotkey, $.separator, $.command),
 
@@ -25,13 +20,6 @@ module.exports = grammar({
         $.key_operator,
         $.key,
       ),
-
-    leader_keymap: ($) => $._leader_keymap,
-    _leader_keymap: ($) =>
-      seq($.leader_key, repeat($.key), $.separator, $.command),
-
-    leader_key: ($) => $._leader_key,
-    _leader_key: (_) => token("<leader>"),
 
     blocklist: ($) => seq($.blocklist_directive, $.string_list),
 
@@ -69,7 +57,7 @@ module.exports = grammar({
         /[A-Z0-9]/i, // Combined alphanumeric
       ),
 
-    separator: (_) => ":",
+    separator: (_) => choice(":", "->"),
 
     command: (_) => /(?:.*\\\n\s+)*.*\n/,
 

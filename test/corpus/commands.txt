@@ -73,7 +73,7 @@ ctrl - a:
 
 ===============
 complex command
-===============
+==================
 
 ctrl - a:
   if ! alacritty msg create-window > /dev/null; then \
@@ -82,11 +82,28 @@ ctrl - a:
 
 ---
 
-  (source_file
-    (keymap
-      (hotkey
-        (modifier)
-        (key_operator)
-        (key))
-      (separator)
-      (command)))
+   (source_file
+     (keymap
+       (hotkey
+         (modifier)
+         (key_operator)
+         (key))
+       (separator)
+       (command)))
+
+==================
+arrow operator
+==================
+
+ctrl - a -> echo "Hello World"
+
+---
+
+   (source_file
+     (keymap
+       (hotkey
+         (modifier)
+         (key_operator)
+         (key))
+       (separator)
+       (command)))

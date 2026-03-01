@@ -2,5 +2,4 @@
 
 [
   (keymap)
-  (leader_keymap)
 ] @fold

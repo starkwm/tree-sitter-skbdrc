@@ -74,59 +74,9 @@
     }
   },
   {
-    "type": "leader_key",
+    "type": "separator",
     "named": true,
     "fields": {}
-  },
-  {
-    "type": "leader_keymap",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "command",
-          "named": true
-        },
-        {
-          "type": "key",
-          "named": true
-        },
-        {
-          "type": "leader_key",
-          "named": true
-        },
-        {
-          "type": "separator",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "set_leader",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "directive",
-          "named": true
-        },
-        {
-          "type": "hotkey",
-          "named": true
-        },
-        {
-          "type": "separator",
-          "named": true
-        }
-      ]
-    }
   },
   {
     "type": "source_file",
@@ -143,14 +93,6 @@
         },
         {
           "type": "keymap",
-          "named": true
-        },
-        {
-          "type": "leader_keymap",
-          "named": true
-        },
-        {
-          "type": "set_leader",
           "named": true
         }
       ]
@@ -172,7 +114,11 @@
     }
   },
   {
-    "type": "<leader>",
+    "type": "->",
+    "named": false
+  },
+  {
+    "type": ":",
     "named": false
   },
   {
@@ -197,10 +143,6 @@
     "extra": true
   },
   {
-    "type": "directive",
-    "named": true
-  },
-  {
     "type": "key_operator",
     "named": true
   },
@@ -210,10 +152,6 @@
   },
   {
     "type": "modifier_operator",
-    "named": true
-  },
-  {
-    "type": "separator",
     "named": true
   },
   {
